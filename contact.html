@@ -1,0 +1,91 @@
+<!--  -->
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>niyantri — Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            espresso: '#4b2e2b',
+            crema: '#f3e6d8',
+            sage: '#9aaea3',
+            teal: '#278d89'
+          },
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body style="font-family: 'Poppins', sans-serif;" class="w-full min-h-screen bg-crema text-espresso font-poppins">
+  <header class="w-full bg-espresso text-crema">
+    <div class="w-full flex items-center justify-between px-6 py-4">
+      <a href="./index.html" class="text-2xl font-extrabold">niyantri</a>
+      <nav class="flex gap-4">
+        <a href="./index.html" class="px-3 py-2">Home</a>
+        <a href="./menu.html" class="px-3 py-2">Menu</a>
+        <a href="./about.html" class="px-3 py-2">About</a>
+        <a href="./contact.html" class="px-3 py-2 font-semibold underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="w-full px-6 py-12">
+    <h1 class="text-4xl font-extrabold">Contact</h1>
+    <p class="mt-2 text-espresso/90">Get in touch or find us in person — we’d love to hear from you.</p>
+
+    <div class="w-full mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="w-full bg-white/70 rounded-lg p-6 shadow">
+        <h3 class="text-2xl font-bold">Visit Us</h3>
+        <p class="mt-2 text-sm">123 Modern Ave, Suite 100<br/>City, State</p>
+        <p class="mt-4 text-sm">Hours: Mon–Fri 7am–6pm • Sat–Sun 8am–5pm</p>
+
+        <h4 class="mt-6 font-semibold">Phone</h4>
+        <p class="text-sm">(555) 123-4567</p>
+
+        <h4 class="mt-4 font-semibold">Events & wholesale</h4>
+        <p class="text-sm">events@niyantri.example</p>
+      </div>
+
+      <div class="w-full bg-white/70 rounded-lg p-6 shadow">
+        <h3 class="text-2xl font-bold">Send a Message</h3>
+        <form class="mt-4 space-y-4">
+          <div>
+            <label class="block text-sm font-medium">Name</label>
+            <input type="text" class="w-full px-3 py-2 rounded border" placeholder="Your name" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium">Email</label>
+            <input type="email" class="w-full px-3 py-2 rounded border" placeholder="you@domain.com" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium">Message</label>
+            <textarea class="w-full px-3 py-2 rounded border h-32" placeholder="Tell us what's on your mind"></textarea>
+          </div>
+          <div class="flex justify-end">
+            <button class="px-4 py-2 bg-teal text-crema rounded font-semibold">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="w-full bg-espresso text-crema px-6 py-6 mt-8">
+    <div class="w-full flex items-center justify-between">
+      <div class="text-sm">© niyantri</div>
+      <div class="text-sm">Questions? Say hello.</div>
+    </div>
+  </footer>
+</body>
+</html>
