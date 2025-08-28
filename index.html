@@ -1,0 +1,106 @@
+<!--  -->
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>niyantri — Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    // Tailwind custom config (colors + font)
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            espresso: '#4b2e2b',
+            crema: '#f3e6d8',
+            sage: '#9aaea3',
+            teal: '#278d89'
+          },
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body style="font-family: 'Poppins', sans-serif;" class="w-full min-h-screen bg-crema text-espresso font-poppins leading-normal">
+  <!-- Navigation -->
+  <header class="w-full bg-espresso text-crema">
+    <div class="w-full flex items-center justify-between px-6 py-4">
+      <a href="./index.html" class="text-2xl font-extrabold tracking-tight">niyantri</a>
+      <nav class="flex gap-4">
+        <a href="./index.html" class="px-3 py-2 hover:bg-cream hover:bg-opacity-10 rounded">Home</a>
+        <a href="./menu.html" class="px-3 py-2 hover:bg-cream hover:bg-opacity-10 rounded">Menu</a>
+        <a href="./about.html" class="px-3 py-2 hover:bg-cream hover:bg-opacity-10 rounded">About</a>
+        <a href="./contact.html" class="px-3 py-2 hover:bg-cream hover:bg-opacity-10 rounded">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero (full-width) -->
+  <section class="w-full relative">
+    <div class="w-full h-[60vh] md:h-[70vh] bg-[url('https://images.unsplash.com/photo-1624289612482-363a17aa30d6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBjb2ZmZWUlMjBzaG9wJTIwaW50ZXJpb3IlMjB3aXRoJTIwYmFyaXN0YSUyMG1ha2luZyUyMGVzcHJlc3NvJTJDJTIwd2FybSUyMGxpZ2h0c3xlbnwwfDB8fHwxNzU2MzczMjcwfDA&ixlib=rb-4.1.0&q=80&w=1080')] bg-cover bg-center flex items-center">
+      <div class="w-full bg-gradient-to-r from-espresso/70 via-espresso/30 to-transparent p-8 md:p-16">
+        <div class="w-full md:w-1/2">
+          <h1 class="text-4xl md:text-6xl font-extrabold text-crema leading-tight">niyantri — Bold Coffee, Modern Vibe</h1>
+          <p class="mt-4 text-crema/90 text-lg md:text-xl">Craft-forward espresso, clean design, and a space built for bold flavors and bold ideas.</p>
+          <div class="mt-6 flex gap-4">
+            <a href="./menu.html" class="inline-block bg-sage text-espresso font-semibold px-5 py-3 rounded shadow">See the Menu</a>
+            <a href="./about.html" class="inline-block border border-crema text-crema px-5 py-3 rounded">Our Story</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features (full-width) -->
+  <section class="w-full px-6 py-12">
+    <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="w-full bg-white/60 rounded-lg p-6 shadow-md">
+        <h3 class="text-2xl font-bold">Bold Espresso</h3>
+        <p class="mt-3 text-sm text-espresso/90">Direct-roasted beans calibrated for clarity, crema, and presence.</p>
+      </div>
+      <div class="w-full bg-white/60 rounded-lg p-6 shadow-md">
+        <h3 class="text-2xl font-bold">Crafted Menu</h3>
+        <p class="mt-3 text-sm text-espresso/90">Minimal, intentional menu focused on exceptional drinks and seasonal items.</p>
+      </div>
+      <div class="w-full bg-white/60 rounded-lg p-6 shadow-md">
+        <h3 class="text-2xl font-bold">Community Space</h3>
+        <p class="mt-3 text-sm text-espresso/90">A modern, comfortable spot for work, meetups, and great conversations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA strip (full-width) -->
+  <section class="w-full px-6 py-10 bg-teal text-crema">
+    <div class="w-full flex flex-col md:flex-row items-center justify-between gap-4">
+      <div>
+        <h4 class="text-xl font-bold">Subscribe for new roasts & specials</h4>
+        <p class="text-sm opacity-90">Get early access to limited drops and events.</p>
+      </div>
+      <form class="w-full md:w-auto flex gap-2">
+        <input aria-label="email" type="email" placeholder="Your email" class="px-4 py-2 rounded text-espresso w-full md:w-64" />
+        <button class="px-4 py-2 bg-espresso text-crema rounded font-semibold">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer (full-width) -->
+  <footer class="w-full bg-espresso text-crema px-6 py-6 mt-8">
+    <div class="w-full flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="text-sm">© niyantri — Crafted with intention</div>
+      <div class="flex gap-4 text-sm">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Privacy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
