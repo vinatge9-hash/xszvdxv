@@ -1,0 +1,121 @@
+<!--  -->
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>niyantri — Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            espresso: '#4b2e2b',
+            crema: '#f3e6d8',
+            sage: '#9aaea3',
+            teal: '#278d89'
+          },
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body style="font-family: 'Poppins', sans-serif;" class="w-full min-h-screen bg-crema text-espresso font-poppins">
+  <header class="w-full bg-espresso text-crema">
+    <div class="w-full flex items-center justify-between px-6 py-4">
+      <a href="./index.html" class="text-2xl font-extrabold">niyantri</a>
+      <nav class="flex gap-4">
+        <a href="./index.html" class="px-3 py-2">Home</a>
+        <a href="./menu.html" class="px-3 py-2 font-semibold underline">Menu</a>
+        <a href="./about.html" class="px-3 py-2">About</a>
+        <a href="./contact.html" class="px-3 py-2">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="w-full px-6 py-10">
+    <h1 class="text-4xl font-extrabold">Menu</h1>
+    <p class="mt-2 text-espresso/90">A focused lineup designed to highlight clarity and craft.</p>
+
+    <!-- Menu grid (full-width) -->
+    <section class="w-full mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Item Card -->
+      <article class="w-full bg-white/70 rounded-lg p-6 shadow">
+        <img src="https://images.unsplash.com/photo-1595177924939-4a0573ab3814?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwxMHx8Y2xvc2UtdXAlMjBvZiUyMGFuJTIwZXNwcmVzc28lMjBzaG90JTIwd2l0aCUyMGNyZW1hfGVufDB8MHx8fDE3NTYzNzMyNzF8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Espresso" class="w-full h-48 object-cover rounded" />
+        <h3 class="mt-4 text-2xl font-bold">Espresso</h3>
+        <p class="mt-2 text-sm">Precise, single-origin shots — clean, balanced, and intense.</p>
+        <div class="mt-4 flex items-center justify-between">
+          <span class="font-semibold">$2.75</span>
+          <button class="px-3 py-1 bg-sage text-espresso rounded">Order</button>
+        </div>
+      </article>
+
+      <article class="w-full bg-white/70 rounded-lg p-6 shadow">
+        <img src="https://pixabay.com/get/gb978cb85463407504c8f5e8ef523c96ac4a00a572cd15cf5d6ab3983351b9b75c906dd73b1cb319ac3bdc2a480704e7e0d6553a76e32281fa1501fedfad39574_640.jpg" alt="Latte" class="w-full h-48 object-cover rounded" />
+        <h3 class="mt-4 text-2xl font-bold">Latte</h3>
+        <p class="mt-2 text-sm">Silky steamed milk with a bold espresso base. Smooth and modern.</p>
+        <div class="mt-4 flex items-center justify-between">
+          <span class="font-semibold">$4.25</span>
+          <button class="px-3 py-1 bg-sage text-espresso rounded">Order</button>
+        </div>
+      </article>
+
+      <article class="w-full bg-white/70 rounded-lg p-6 shadow">
+        <img src="https://images.unsplash.com/photo-1618090850287-3e5b30ac48c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw2fHxwb3VyLW92ZXIlMjBjb2ZmZWUlMjBpbiUyMGElMjBjbGVhciUyMGNhcmFmZSUyMG92ZXIlMjBtb2Rlcm4lMjBzY2FsZXxlbnwwfDB8fHwxNzU2MzczMjcyfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Pour Over" class="w-full h-48 object-cover rounded" />
+        <h3 class="mt-4 text-2xl font-bold">Pour Over</h3>
+        <p class="mt-2 text-sm">Hand-brewed for clarity — bright, precise, and aromatic.</p>
+        <div class="mt-4 flex items-center justify-between">
+          <span class="font-semibold">$4.75</span>
+          <button class="px-3 py-1 bg-sage text-espresso rounded">Order</button>
+        </div>
+      </article>
+
+      <article class="w-full bg-white/70 rounded-lg p-6 shadow">
+        <img src="https://images.pexels.com/photos/9550573/pexels-photo-9550573.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Iced Coffee" class="w-full h-48 object-cover rounded" />
+        <h3 class="mt-4 text-2xl font-bold">Iced Coffee</h3>
+        <p class="mt-2 text-sm">Chilled and crisp — brewed to maintain character over ice.</p>
+        <div class="mt-4 flex items-center justify-between">
+          <span class="font-semibold">$3.50</span>
+          <button class="px-3 py-1 bg-sage text-espresso rounded">Order</button>
+        </div>
+      </article>
+
+      <article class="w-full bg-white/70 rounded-lg p-6 shadow">
+        <img src="https://images.unsplash.com/photo-1612637580531-c33cb1f1f110?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw3fHxmbGFreSUyMHBhc3RyeSUyMG5leHQlMjB0byUyMGFuJTIwZXNwcmVzc28lMjBzaG90JTIwb24lMjBhJTIwd29vZGVuJTIwdGFibGV8ZW58MHwwfHx8MTc1NjM3MzI3NHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Pastry" class="w-full h-48 object-cover rounded" />
+        <h3 class="mt-4 text-2xl font-bold">Daily Pastry</h3>
+        <p class="mt-2 text-sm">A rotating selection of house-baked goods, simple and refined.</p>
+        <div class="mt-4 flex items-center justify-between">
+          <span class="font-semibold">$3.00</span>
+          <button class="px-3 py-1 bg-sage text-espresso rounded">Order</button>
+        </div>
+      </article>
+
+      <article class="w-full bg-white/70 rounded-lg p-6 shadow">
+        <img src="https://pixabay.com/get/gd2fcf1160822298d23a5448718184c9e0258f8fe2ac7883734c091250efb3480043cd601deaef1e5dbf96fdd3f1ebb1f_640.jpg" alt="Tasting Flight" class="w-full h-48 object-cover rounded" />
+        <h3 class="mt-4 text-2xl font-bold">Tasting Flight</h3>
+        <p class="mt-2 text-sm">Three curated shots to explore our current roasts and processes.</p>
+        <div class="mt-4 flex items-center justify-between">
+          <span class="font-semibold">$9.00</span>
+          <button class="px-3 py-1 bg-sage text-espresso rounded">Order</button>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <footer class="w-full bg-espresso text-crema px-6 py-6 mt-8">
+    <div class="w-full flex items-center justify-between">
+      <div class="text-sm">© niyantri</div>
+      <div class="text-sm">Open daily • Location details on Contact</div>
+    </div>
+  </footer>
+</body>
+</html>
